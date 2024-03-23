@@ -30,6 +30,11 @@ return {
 		{ "<leader>fc", "<cmd>Telescope grep_string<CR>", desc = "Find string under cursor in current directory" },
 		-- buffers and help
 		{ "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "List open buffers in current neovim instance" },
+		{
+			"<leader>bb",
+			"<cmd>:lua require'telescope.builtin'.buffers(require('telescope.themes').get_dropdown({}))<cr>",
+			desc = "List open bufffers in current instance (in dropdown view)",
+		},
 		{ "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "List available help tags" },
 		-- git
 		{ "<leader>gc", "<cmd>Telescope git commits<CR>", desc = "List all commits" },
