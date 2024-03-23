@@ -15,6 +15,7 @@ opt.list = true
 opt.listchars = {
 	eol = "˺",
 	tab = "⋅ ",
+	trail = "·",
 }
 opt.mouse = "a"
 opt.backup = false
@@ -22,6 +23,7 @@ opt.foldenable = false
 opt.swapfile = false
 opt.number = true
 opt.pastetoggle = ""
+opt.clipboard = "unnamedplus"
 
 -- identation settings
 opt.expandtab = true
@@ -41,8 +43,8 @@ opt.splitbelow = true
 opt.statusline = "+=%F"
 opt.statusline = string.format(
 	"%%<%%f%%h%%m%%r%%=format=%s file=%s enc=%s %%b 0x%%B %%l,%%c%%V %%P",
-	vim.o.fileformat, 
-	vim.o.fileencoding, 
+	vim.o.fileformat,
+	vim.o.fileencoding,
 	vim.o.encoding
 )
 
@@ -54,13 +56,13 @@ opt.timeout = false
 opt.undolevels = 1000
 opt.updatetime = 100
 opt.wildignore = {
-  "*/min/*",
-  "*/vendor/*",
-  "*/node_modules/*",
-  "*/bower_components/*",
-  "*/dictionaries/*",
-  "*/dist_version/*",
-  "*/sitestatic/*",
+	"*/min/*",
+	"*/vendor/*",
+	"*/node_modules/*",
+	"*/bower_components/*",
+	"*/dictionaries/*",
+	"*/dist_version/*",
+	"*/sitestatic/*",
 }
 opt.wildmenu = true
 opt.wrap = true
